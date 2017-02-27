@@ -1,0 +1,448 @@
+.list--marginT {
+    margin-top: 1em;
+}
+
+.list--marginB, .button--marginB {
+    margin-bottom: 1em;
+}
+
+.list--marginB .list__item:last-child {
+    min-height: 2.85em;
+}
+
+.button--marginTLR {
+    width: calc(100% - 16px) !important;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 1em;
+}
+
+.button--white {
+    background-color: #fff;
+    border: 1px #ccc solid;
+    color: #000;
+}
+
+section .search-input, section .search-input:focus {
+    margin: 8px;
+    width: calc(100% - 16px);
+    background-color: #fff;
+    border: none;
+}
+
+.text-input.text-input--material {
+    position: relative;
+    top: 0;
+}
+
+label.text-input__container {
+    position: relative;
+    top: 15px;
+}
+
+*[placeholder] {
+    width: 100%;
+}
+
+.page__background {
+    background-color: #f5f5f5;
+}
+
+.list[modifier="noborder"] {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: -1px;
+}
+
+.list[modifier="noborder"] .list__item {
+    padding-left: 0;
+}
+
+.list[modifier="noborder"] ons-col {
+    font-size: 0.8em;
+    color: #aaa;
+    text-align: center;
+    border-left: 1px #ccc solid;
+}
+
+.list[modifier="noborder"] ons-col:nth-child(1) {
+    border-left: none;
+}
+
+.ons-icon[icon="ion-arrow-down-b"] {
+    position: relative;
+    top: -3px;
+    left: 4px;
+}
+
+.price {
+    color: #da6d63;
+    font-size: 1.25em;
+}
+
+.list--mine img {
+    margin: 0 auto 1em;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.list--mine .list__header {
+    background-color: #fff;
+}
+
+.list--mine .list__header--material img {
+    margin: 1em auto;
+}
+
+.list--title .right .list__item__subtitle {
+    font-size: 0.8em;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.list--title .right .list__item__title {
+    font-size: 1.25em;
+    color: #da6d63;
+}
+
+.list--title .center .list__item__subtitle {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.list__item--sell b {
+    display: block;
+    font-style: normal;
+    margin: 1px 2px 1px 1px;
+    width: 14px;
+    height: 14px;
+    background-color: hsl(200, 95%, 50%);
+    border-radius: 2px;
+    font-size: 0.5em;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-weight: 100;
+}
+
+.list__item--sell i {
+    display: block;
+    font-style: normal;
+    margin: 1px 2px 1px 1px;
+    width: 14px;
+    height: 14px;
+    background-color: hsl(35, 95%, 65%);
+    border-radius: 2px;
+    font-size: 0.5em;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+}
+
+.list__item--sell em {
+    display: block;
+    font-style: normal;
+    margin: 1px 2px 1px 1px;
+    width: 14px;
+    height: 14px;
+    background-color: #eb5757;
+    border-radius: 2px;
+    font-size: 0.5em;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+}
+
+.list--signIn a {
+    font-size: 0.8em;
+    color: #aaa;
+    text-decoration: none;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: .5em;
+}
+
+input[name*="Password"] {
+    width: calc(100% - 16px);
+    display: block;
+    margin: 1em 8px;
+}
+
+input[name*="Password"] + .text-input--material__label,
+input[name*="Password"] + .text-input--material__label--active {
+    margin-top: 1em;
+    margin-left: 8px;
+}
+
+.right .button--material,
+.right .button--quiet {
+    color: #fff;
+}
+
+.list--marginB .list__item:last-child {
+    height: 2em;
+}
+
+.list__item--material__center {
+    padding-right: 0;
+}
+
+.list--order .left img {
+    width: 70px;
+    height: 70px;
+}
+
+.list--order .center {
+    padding-left: .5em;
+}
+
+.modal--load circle:nth-child(2) {
+    stroke: #aaa;
+}
+
+.button--noRadius {
+    border-radius: 0;
+}
+
+.list--pay .list__header {
+    background-color: #f2f2f2;
+    color: #aaa;
+}
+
+.list--pay textarea {
+    background-color: #fff;
+    border: none;
+    padding: 4px 14px;
+    min-height: 64px;
+}
+
+.button--result {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.myDialog {
+    padding: 1.5em .5em 1em;
+    text-align: center;
+}
+
+/*开启券码*/
+.couponCodeBg {
+    padding: 6px 1.8em;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    color: #ccc;
+    font-size: 0.8em;
+    border-radius: 2px;
+    background-color: #f2f2f2;
+    background: linear-gradient(135deg,
+    #fff .12em,
+    #eee 0, #eee calc(50% - .125em),
+    #fff 0, #fff calc(50% + .125em),
+    #eee 0, #eee calc(100% - .12em),
+    #fff 0
+    );
+    background-size: 1.5em 1.5em;
+}
+
+/*生成邀请码*/
+.inviteBg {
+    width: 90%;
+    margin: 1.5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-weight: 500;
+    text-shadow: #aaa 0 1px 1px;
+    height: 8em;
+    background-color: #f2f2f2;
+    background: linear-gradient(135deg,
+    #fff .12em,
+    #f1f1f1 0, #f1f1f1 calc(50% - .125em),
+    #fff 0, #fff calc(50% + .125em),
+    #f1f1f1 0, #f1f1f1 calc(100% - .12em),
+    #fff 0
+    );
+    background-size: 1.5em 1.5em;
+}
+
+/*已购买页面上下拉刷新*/
+.pushRefresh {
+    text-align: center;
+    display: none;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.pushRefresh.in {
+    display: block;
+}
+
+.up, .pushRefresh {
+    color: #ccc;
+    font-size: 0.8em;
+}
+
+.up ons-icon, .pushRefresh ons-icon {
+    position: relative;
+    top: -2px;
+}
+
+/*灰色字且缩小*/
+.grayColor {
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+/*售卖列表商品描述*/
+.list__item--sell__subtitle {
+    font-size: .5em;
+    color: #aaa;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*编辑删除、支付取消优惠券页面，固定在底部的俩按钮*/
+.btntab {
+    width: calc(100% - 16px);
+    margin: 1em auto;
+}
+
+.btntab button {
+    height: 3em;
+}
+
+.btntab .button-bar__item:first-child button {
+    background-color: #da6d63;
+    color: #fff;
+}
+
+.btntab button:active {
+    height: 3em !important;
+}
+
+ons-icon[icon="ion-android-checkmark-circle"] {
+    line-height: .4em;
+    animation: linght 2s infinite 1s;
+    -webkit-animation: linght 2s infinite 1s;
+}
+.rolling{
+    animation: none !important;
+    -webkit-animation: none !important;
+}
+
+@-webkit-keyframes linght {
+    50% {
+        -webkit-transform: rotateY(0deg)
+    }
+    100% {
+        -webkit-transform: rotateY(360deg)
+    }
+}
+
+@keyframes linght {
+    50% {
+        transform: rotateY(0deg)
+    }
+    100% {
+        transform: rotateY(360deg)
+    }
+}
+
+ons-icon[icon="ion-ios-wineglass"] {
+    line-height: 0;
+    transform-origin: bottom left;
+    -webkit-transform-origin: bottom left;
+    animation: cheers 2s infinite 1s;
+    -webkit-animation: cheers 2s infinite 1s;
+}
+
+@-webkit-keyframes cheers {
+    70% {
+        -webkit-transform: rotate(0deg);
+    }
+    85% {
+        -webkit-transform: rotate(15deg);
+    }
+}
+
+@keyframes cheers {
+    70% {
+        transform: rotate(0deg);
+    }
+    85% {
+        transform: rotate(15deg);
+    }
+}
+
+/*发布选择类型按钮*/
+.handleShow {
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+    outline: none;
+    text-align: left;
+    padding-left: 0;
+    /*color: hsla(214, 80%, 45%, 0.8);*/
+    color: #da6d63;
+}
+
+.list__item--material .handleShow {
+    /*color: hsla(175, 92%, 26%, .85);*/
+    color: #da6d63;
+}
+
+.list__item--handleShow {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.list__item--handleShow .list__item--material__center {
+    border-bottom: 1px #bbb solid;
+}
+
+.list--sideSelect {
+    background-color: #fff;
+}
+
+.list--sideSelect .list__item {
+    color: #aaa;
+    font-size: 0.8em;
+}
+
+/*date插件*/
+input[type="date"]::before {
+    color: #999;
+    content: attr(placeholder);
+}
+
+input[type="date"][value^="2"]::before {
+    content: '' !important;
+}
+
+/*发布页面上传图片*/
+.list__item--handleShow img {
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    padding: 1px;
+    border: none;
+    margin-right: 8px;
+}
+
+.list__item--handleShow ons-icon[icon='ion-ios-camera-outline'] {
+    font-size: 42px;
+    position: relative;
+    left: -52.5px;
+    opacity: .3;
+}
