@@ -27,5 +27,6 @@ export default {
         new OpenBrowser({
             url: "http://localhost:8080/"
         })
-    ]
+    ],
+    devtool: "eval"
 }

@@ -5,7 +5,7 @@ import React from "react"
 import Login from "./Login"
 import * as Ons from "react-onsenui"
 import {connect} from "react-redux"
-import Register from "../containers/Register"
+import RegisterDate from "../containers/RegisterData"
 import * as ons from "onsenui"
 const LoginSuccessPage = (props) => {
     return (
@@ -20,7 +20,7 @@ const LoginSuccessPage = (props) => {
 const LoginPage = (props) => {
     const {userName, password}=props
     const handleSubmit = (value) => {
-        if (userName === value.username) {
+        if (userName === value.userName) {
             props.navigator.pushPage({
                 comp: LoginSuccessPage,
                 props: {key: "success", user: userName}
@@ -31,16 +31,21 @@ const LoginPage = (props) => {
     }
     return (
         <Ons.Page renderToolbar={() => (
-            <Toolbar>
+            <Ons.Toolbar>
                 <div className="left"><Ons.BackButton/></div>
-                <div className="content">登入</div>
-                <div><Ons.Button onClick={() => props.navigator.pushPage({
-                    comp: Register,
+                <div className="center">登入</div>
+                <div className="right"><Ons.Button onClick={() => props.navigator.pushPage({
+                    comp: RegisterDate,
                     props: {key: "register"}
                 })}>注册</Ons.Button></div>
-            </Toolbar>
+            </Ons.Toolbar>
         )}>
             <Login onSubmit={handleSubmit}/>
         </Ons.Page>
     )
 }
+const mapStateToProps = (state) => ({
+    userName: state.loginReducer.userName,
+    password: state.loginReducer.password
+})
+export default connect(mapStateToProps)(LoginPage)

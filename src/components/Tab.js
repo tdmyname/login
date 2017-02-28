@@ -4,6 +4,7 @@
 import React from "react"
 import * as Ons from "react-onsenui"
 import Navigator from "./Navigator"
+import LoginPage from "./LoginPage"
 const Test = () => {
     return (
         <h1>Td</h1>

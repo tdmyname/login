@@ -36,5 +36,13 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tdmyname/login.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tdmyname/login/issues"
+  },
+  "homepage": "https://github.com/tdmyname/login#readme",
   "description": ""
 }

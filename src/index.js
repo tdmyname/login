@@ -9,15 +9,13 @@ import reducer from "./reducers"
 import "../node_modules/onsenui/css/onsenui.css"
 import "./css/couponStyle.css"
 import "./css/onsen-css-components.css"
+import Tabs from "./components/Tab"
 const elem = document.createElement("div")
 document.body.appendChild(elem)
-const Hello = () => {
-    return <h1>Hello,world</h1>
-}
 const store = createStore(reducer)
 ReactDOM.render(
     <Provider store={store}>
-        <Hello/>
+        <Tabs/>
     </Provider>,
     elem
 )
